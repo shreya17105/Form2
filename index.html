@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <style>
+        @media (min-width:600px) {
+            form{
+            margin: auto;
+            width: 60vw;
+            
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+      
+        }
+       
+    </style>
+</head>
+<body>
+   
+    <form>
+        <h2>Complex Form</h2>
+        <!-- PERSONAL INFORMATIOON -->
+        <fieldset>
+            <legend>Personal Informaton:</legend><br>
+            <label for="name" >Name:</label>
+            <input type="text" id="name" >
+            <label for="Email">E-mail of applicant:</label>
+            <input type="email" id="Email" placeholder="abs@example.com" required>
+            <label for="Phone">Phone:</label>
+            <input type="tel" id="Phone">
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob">
+            <!-- //gender -->
+            <label>Gender:</label>
+            <input type="radio" id="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" id="Others">
+           <label for="others">Others</label>
+            
+            <!-- country -->
+             <label>Country</label>
+             <select name="country" id="country">
+                <option value="India">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+                <option value="e">E</option>
+            </select>
+        </fieldset>
+        <!-- ADDRESS  -->
+        <fieldset>
+        <label for="street" >Street:</label>
+        <input type="text" id="street">
+
+        <label for="city" >City:</label>
+        <input type="text" id="city">
+
+        <label for="state" >State:</label>
+        <input type="text" id="state">
+
+        <label for="zc" >Zip Code:</label>
+        <input type="text" id="zc">
+        </fieldset>
+        <!-- OTHERS -->
+        <fieldset>
+            <label>Other Informations:</label><br>
+            <label for="oi">Comments:</label>
+            <textarea name="oi" id="oi" rows="3" cols="30"></textarea>
+            <label>I agree to the Terms& Conditions</label>
+            <input type="radio" id="accept">
+        </fieldset>
+        <!-- Button -->
+       <button type="submit" id="button">Submit</button>
+       <fieldset >
+        <legend>yyyy</legend>
+       </fieldset>
+    </form>
+</body>
+</html>
+<!-- 
+    LEGEND 
+PLACHOLDER
+REQUIRED
+DROP DOWN BOX K LIYE SELCT TAG 
+CHECK COX K LIYE INPUT TYPE="CHECKBOX"  
+ -->
